@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Нужен для адаптивности: страница равна ширине экрана телефона -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>glance — интернет-магазин техники</title>
+
+  <!-- Шрифт Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Наши стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== Шапка ===== -->
+  <header>
+    <div class="wrap hd">
+
+      <div class="logo">glance</div>
+
+      <div class="search">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6">
+          <circle cx="7" cy="7" r="5" />
+          <path d="M11 11l4 4" />
+        </svg>
+        Поиск
+      </div>
+
+      <!-- Верхнее меню (для компьютера), заполняется в script.js -->
+      <nav class="tabs" id="t1"></nav>
+
+    </div>
+  </header>
+
+
+  <div class="wrap">
+    <main>
+
+      <!-- ===== Баннер ===== -->
+      <section class="banner">
+        <div>
+          <h1>Умная колонка</h1>
+          <p>СКИДКА 30% при покупке второго товара</p>
+        </div>
+
+        <img src="images/speaker.webp" alt="Умная колонка">
+
+        <button class="arr l" aria-label="Назад">‹</button>
+        <button class="arr r" aria-label="Вперёд">›</button>
+      </section>
+
+
+      <!-- ===== Каталог ===== -->
+      <section>
+        <h2>Каталог</h2>
+        <!-- Плитки категорий добавляет script.js -->
+        <div class="cats" id="cats"></div>
+      </section>
+
+
+      <!-- ===== Акции ===== -->
+      <section>
+        <h2>Акции</h2>
+        <!-- Карточки товаров добавляет script.js -->
+        <div class="prods" id="prods"></div>
+      </section>
+
+    </main>
+  </div>
+
+
+  <!-- ===== Нижнее меню (для телефона), заполняется в script.js ===== -->
+  <nav class="bar" id="t2"></nav>
+
+  <!-- Скрипт подключаем в конце, когда вся страница уже загружена -->
+  <script src="script.js"></script>
+
+</body>
+</html>
